@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding-top: 5.5rem;
 }
 
 .field{
@@ -24,18 +25,22 @@
     justify-content: center;
     gap: 2rem;
     background-color: #080a189d;
-    width: max-content;
+    width: 25rem;
     padding: 2rem;
     border-radius: 2rem;
     font-size: 1.7rem;
     overflow: hidden;
 }
 
+#contact form div{
+    width: 100%;
+}
+
 
 .field input,.field textarea{
     border: 0;
     border-radius: .4rem;
-    width: 20rem;
+    width: 100%;
     padding: .7rem;
     height: 2rem;    
     background-color: #141b5c52;
@@ -104,4 +109,15 @@ p .scroll-arrows span{
     display: flex;
     align-items: center;
     gap: .5rem;
+    width: max-content;
+}
+
+@media (max-width: 500px) {
+    #contact form{
+        width: 100%;
+        padding: 1rem;
+    }
+    #contact{
+        padding: 5.5rem 1rem;
+    }
 }
