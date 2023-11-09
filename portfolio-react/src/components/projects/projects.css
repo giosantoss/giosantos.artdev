@@ -77,6 +77,9 @@
 .galery-card{
   background-color: #020212f5;
   background-color: #05051ff5;
+  background-color: #26395ce1;
+  background-image: linear-gradient(to bottom, #0c1d4181,rgba(18, 43, 126, 0.357)) ;
+  background-image: linear-gradient(to bottom, #0E1F50,#07143b) ;
   padding: 1.5rem;
   border-radius: 2.5rem;
   height: max-content;
@@ -101,6 +104,8 @@
 
 .project-card{
   background-color: #020212d2;
+  background-image: linear-gradient(to top, #1e366681,rgba(34, 50, 102, 0.357)) ;
+  background-image: linear-gradient(to top, #0e1f50a8,#07143ba9) ;
   border-radius: 3rem;
   padding: 2rem;
   margin-left: 5vw;
@@ -171,7 +176,6 @@
   border: none;
   display: flex;
   border-radius: .5rem;
-  background-color: #0a0d27;
   background-color: transparent;
   color: white;
 }
@@ -215,7 +219,7 @@
   left: 0;
   top: 0;
   backdrop-filter: blur(1rem);
-  border-radius: 3rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,14 +255,25 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+  #galery{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: max-content;
+  }
+  .project-card-container{
+    height: 100%;
+    padding-top: 3rem;
+  }
   .galery-card{
     width: 90vw;
     padding: 1rem;
+    border-radius: 2rem;
   }
   .galery-img{
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
   }
   .project-card-container{
     top:0;
@@ -269,6 +284,7 @@
   }
   .project-card{
     padding: 1rem;
+    border-radius: 2rem;
   }
   .project-card-img{
     width: 100%;
@@ -280,14 +296,34 @@
   }
   .project-description{
     padding: 0 0 1rem 0;
-    font-size: 1rem;
+    font-size: .9rem;
   }
   .close-btn{
     top: 1.5rem;
     right: 1.5rem;
   }
   .arrow-btn{
-    font-size: 2rem;
+    font-size: 2.5rem;
     top: 15%;
+  }
+  .technologies-card h3{
+    font-size: .9rem;
+  }
+  .site-link{
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1rem;
+  }
+  .project-card .technologies img.tech{
+    width: 3rem;
+    height: 3rem;
+  }
+  video{
+    width: 100%;
+    margin: 0 1rem;
+  }
+  .itrip-return{
+    bottom: 1rem;
+    right: 1rem;
   }
 }
