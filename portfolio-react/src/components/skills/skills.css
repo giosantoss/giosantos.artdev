@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    padding-top: 2rem;
+    padding-top: 3rem;
     align-items: center;
     gap: 10vh;
 }
@@ -10,7 +10,7 @@
 .triangle{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3vw;
     margin-top: 2rem;
     width: 40vw;
 }
@@ -42,7 +42,7 @@
 }
 
 .skills-img{
-    width: 8rem;
+    width: 7.5rem;
     cursor: pointer;
 }
 
@@ -58,7 +58,7 @@
 }
 .blur-icon{
     transition: 500ms;
-    filter: blur(.6rem);
+    filter: blur(.45rem);
 }
 
 .noblur{
@@ -67,13 +67,13 @@
 }
 
 .aside-card{
-    background-color: #f0f9ff34;
     background-color: #0d0f22be;
+    background-color: #ffffff07;
     backdrop-filter: blur(1rem);
     border-radius: 2rem;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.034);
     padding: 1rem;
     overflow: hidden;
+    width: 50vw;
     margin-top: 2.5rem;
 }
 
@@ -87,7 +87,7 @@
     padding: 1rem;
     border-radius: 1.5rem;
     background-color: #0c0c0c75;
-    background-color: #080a189d;
+    background-color: #080a1863;
     display: flex;
     gap: 1rem;
 }
@@ -103,7 +103,8 @@
 }
 
 .ajust-print{
-    width: 24rem;
+    width: 50%;
+    height: 100%;
 }
 
 .desc{
@@ -127,8 +128,8 @@
 
 .vscode-desc{
     position: absolute;
-    top: 20%;
-    margin: 0 20%;
+    top: 30%;
+    margin: 0 15%;
     background-color: #080a189d;
     padding: 1rem;
     border-radius: 1rem;
@@ -139,6 +140,7 @@
 
 .vscode-desc img{
     width: 5rem;
+    height: 100%;
 }
 
 .vscode-desc .desc{
@@ -153,10 +155,39 @@
     color: rgba(255, 255, 255, 0.61);
     cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+    .triangle{
+        width: 65vw;
+    }
+    .skills-img{
+        width: 6rem;
+    }
+    .card-item{
+        flex-direction: column;
+    }
+    .ajust-print{
+        width: 100%;
+    }
+    #skills{
+        height: 100%;
+        padding-top: 4rem;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .aside-card{
+        width: 90vw;
+    }
+    .blur-icon{
+        transition: 500ms;
+        filter: blur(.2rem);
+    }
+}
+
 @media (max-width: 550px) {
     #skills{
         padding: 0;
-        height: 85vh;
+        padding-top: 5rem;
     }
     .top,.base{
         width: 85vw;
@@ -171,4 +202,25 @@
     .base div:nth-child(2) {
         margin-top: 3rem;
     }
+    .triangle{
+        width: 85vw;
+        gap: 4vw;
+    }
+    .aside-card p{
+        font-size: .85rem;
+    }
+    .itrip-return{
+        font-size: 1.5rem;
+    }
+    .itrip-container{
+        border-radius: 1.5rem;
+    }
+
+    .vscode-desc img{
+        width: 3rem;
+    }
+    .vscode-desc .desc{
+        font-size: .7rem;
+    }
+
 }

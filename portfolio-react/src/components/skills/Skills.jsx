@@ -21,10 +21,10 @@ import figmaPrint from '../../assets/skills/figma-print.png'
 import folders from '../../assets/skills/folders.png'
 import { motion,AnimatePresence } from 'framer-motion'
 import animations from '../animations/animations'
-import itrips from '../../assets/projects/itrips-mockup.png'
+import itrips from '../../assets/skills/itrip-videoimg.png'
 import itripsVideo from '../../assets/projects/itrip-video.mp4'
 import {FaRegPlayCircle} from 'react-icons/fa'
-import {IoClose} from 'react-icons/io5'
+import {TbArrowBack} from 'react-icons/tb'
 import { hover } from '@testing-library/user-event/dist/hover'
 
 function Skills() {
@@ -64,7 +64,7 @@ function Skills() {
           <motion.div
           variants={itemSkills}
           transition={itemSkills.transition}>
-            <h2>HTML Skills</h2>
+            <h2>HTML </h2>
             <p className='desc'>I have a good command of the concepts of HTML hierarchy, with solid and logical structures, to improve SEO</p>
           </motion.div>
           <motion.img src={htmlPrint} className='print'
@@ -83,7 +83,7 @@ function Skills() {
           <motion.div
             variants={itemSkills}
             transition={itemSkills.transition}>
-            <h1>React Skills</h1>
+            <h1>React </h1>
             <p className='desc'>
               The react library implemented the concept of componentizing the code, thereby bringing numerous improvements and facilities. I love working with react.
               <p className='desc'>
@@ -110,7 +110,7 @@ function Skills() {
           <motion.div
           variants={itemSkills}
           transition={itemSkills.transition}>
-            <h1>CSS Skills</h1>
+            <h1>CSS </h1>
             <div className="card-description">
               <p className='desc'>
                 Most of the CSS concepts I master well, as shown below.
@@ -134,7 +134,7 @@ function Skills() {
         initial="initial"
         animate="animate"
         exit={'exit'}>
-          <h2>PhotoShop Skills</h2>
+          <h2>PhotoShop </h2>
           
           <motion.div className="card-item"
           variants={itemSkills}
@@ -230,11 +230,6 @@ function Skills() {
             transition={itemSkills.transition}
             onClick={()=>setItrip(1)} />
 
-            <motion.div whileHover={hover} className='play'
-            variants={itemSkills}>
-              <FaRegPlayCircle onClick={()=>setItrip(1)}/>
-            </motion.div>
-
             <AnimatePresence>
                 {itrip !== null &&(
                     <motion.div className='itrip-container'
@@ -243,16 +238,16 @@ function Skills() {
                     initial={{ scale:0 }}
                     animate={{ scale:1 }}
                     exit={{ opacity: 0, scale:0 }}>
-                        <motion.button 
-                        className='close-btn' 
-                        onClick={() => setItrip(null)}
-                        whileHover={{scale:1.5}}>
-                            <IoClose/>
-                        </motion.button>
-                        <video controls width="640" height="360">
-                            <source src={itripsVideo} type="video/mp4"/>
-                            Seu navegador não suporta a exibição de vídeos.
-                        </video>
+                      <motion.button 
+                      className='itrip-return' 
+                      onClick={() => setItrip(null)}
+                      whileHover={{scale:1.5}}>
+                          <TbArrowBack/>
+                      </motion.button>
+                      <video controls width="640" height="360">
+                          <source src={itripsVideo} type="video/mp4"/>
+                          Seu navegador não suporta a exibição de vídeos.
+                      </video>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -304,8 +299,8 @@ function Skills() {
   }
 
   const asideAnm = {
-    initial: {opacity:0,width:0,scale:0},
-    animate: {opacity:1,width:'50%',scale:1},
+    initial: {opacity:0,height:0,scale:0},
+    animate: {opacity:1,height:'auto',scale:1},
     transition: {type: "spring", stiffness: 150, damping: 20},
     exit: {opacity: 0,width:0,scale:0}
   }
