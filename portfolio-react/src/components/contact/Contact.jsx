@@ -79,7 +79,7 @@ const ContactForm = () => {
                         <Controller
                             name="name"
                             control={control}
-                            rules={{ required: 'Required field' }}
+                            rules={{ required: 'Required field', maxLength: { value: 30, message: 'The name is too long' } }}
                             render={({ field }) => <input {...field} />}
                         />
                     </div>
