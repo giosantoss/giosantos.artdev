@@ -1,0 +1,107 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.field div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #080a189d;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+    overflow: hidden;
+}
+
+
+.field input,.field textarea{
+    border: 0;
+    border-radius: .4rem;
+    width: 20rem;
+    padding: .7rem;
+    height: 2rem;    
+    background-color: #141b5c52;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field textarea{
+    height: 6rem;
+    padding-top: .5rem;
+}
+
+#contact aside{
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    color: rgb(255, 52, 52);
+}
+
+#contact label{
+    font-size: 1.3rem;
+}
+
+.send-icon{
+    height: 1.2rem;
+    margin-right: .1rem;
+}
+
+.whats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whats a{
+    margin-top: .5rem;
+}
+
+.whats-icon{
+    width: 2rem;
+    height: 100%;
+}
+
+.whats p{
+    display: flex;
+    gap: .3rem;
+}
+
+#contact .scroll{
+    display: flex;
+}
+
+p .scroll-arrows{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+}
+
+p .scroll-arrows span{
+    height: 7px;
+}
+
+#contact .top{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

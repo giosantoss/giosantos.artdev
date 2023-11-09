@@ -1,0 +1,43 @@
+
+.nav-mobile{
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav-menu{
+    background-color: transparent;
+    padding-top: 2rem;  
+    background-color: #020212d2;
+    backdrop-filter: blur(1rem);
+    width: 10rem;
+    height: max-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.menu-icon{
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
+
+.absolute-close{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    background-color: blue;
+}
+
+@media (max-width: 550px) {
+    .nav-mobile{
+        display: block;
+    }
+    .nav-menu>#nav{
+        display: block;
+    }
+}

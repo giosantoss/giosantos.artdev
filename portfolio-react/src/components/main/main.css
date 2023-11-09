@@ -1,0 +1,43 @@
+#main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.main-logo{
+    width: 20rem;
+}
+
+.main-container{
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 5rem;
+    overflow: visible;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+@media only screen and (min-width: 1550px) {
+    .main-logo{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .main-logo{
+        width: 17rem;
+    }
+    #main{
+        height: 85vh;
+    }
+}

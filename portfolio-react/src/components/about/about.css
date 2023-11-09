@@ -1,0 +1,267 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.about-content{
+  overflow: hidden;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/me-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo{
+    height: 35vw;
+}
+
+.greeting{
+    position: absolute;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+    font-size: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 4vw;
+    top: 40vh;
+}
+
+.greeting p{
+    overflow: hidden;
+}
+
+.vocation{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #3C91F5;
+}
+
+.letter{
+    width: 2.3rem;
+    margin-right: 2px;
+}
+
+.name {
+    font-size: 3.3rem;
+    background-image: linear-gradient(to bottom, #3C91F5, #334E98);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: ubuntu;
+    font-weight: 500;
+}
+
+.me{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/me2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+}
+
+
+
+.about-container{
+    background-color: #0d0f22be;
+    backdrop-filter: blur(2rem);
+    height: max-content;
+    padding: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.about-container p{
+    text-align: justify;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+}
+
+
+.contact-stick{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+}
+
+.about-contact-icon{
+    width: 1.8rem;
+}
+
+.about-contact-btn{
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #2f6be246,#2f6be217) ;
+    border: none;
+    padding: .4rem;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: .3rem;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    height: max-content;
+}
+
+.about-contact-btn:hover{
+    background-color: #091c4281;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(#071a4e,#04041f);
+    padding: 5vh 5vw;
+    height: 100vh;
+}
+
+.end-page-img{
+    height: 5rem;
+}
+
+.page-item .vocation{
+    font-size: 1.5rem;
+}
+.page-item{
+    background-color: #080a189d;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.page-item>p{
+    font-size: 1.45rem;
+    font-weight: 300;
+}
+
+.page-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-img{
+    width: 20rem;
+    border-radius: 1.5rem;
+}
+
+.page-container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.page-description{
+    padding: 0 2rem;
+    border-radius: 1rem;
+    height: max-content;
+}
+
+.scroll{
+    position: fixed;
+    bottom: 2rem;
+    font-size: 1.2rem;
+    z-index: 500;
+    left: 4vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.scroll-arrows{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+}
+
+.scroll span{
+    height: 7px;
+}
+
+@media (max-width: 850px) {
+    .page-item{
+        flex-direction: column;
+    }
+    .page-img{
+        width: 100%;
+    }
+    .about-container,.page-description,.page-item{
+        padding: 1rem;
+    }
+    .greeting{
+        flex-direction: column;
+        top: 7rem;
+        height: 80vh;
+
+    }
+    .logo{
+        height: 75vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .greeting{
+        top: 12vh;
+        font-size: 1.5rem;
+    }
+    .name{
+        font-size: 2.4rem;
+    }
+    .greeting img{
+        width: 1.7rem;
+    }
+    .vocation{
+        font-size: 2rem;
+    }
+    .page-img{
+        border-radius: 1rem;
+    }
+    .logo{
+        height: 100vw;
+    }
+    .page{
+        height: max-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .page p,.page .vocation{
+        font-size: .9rem;
+    }
+    .page-item{
+        align-items: center;
+    }
+    section#about {
+        overflow-x: hidden;
+    }
+    .contact-stick{
+        right: 1rem;
+    }
+}

@@ -1,0 +1,101 @@
+.carousel{
+    position: relative;
+    width: 37rem;
+    height: 23rem;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+
+.carousell{
+    position: relative;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    width: 38rem;
+    height: 23rem;
+}
+
+.card-container{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: 
+        rotateY(calc(var(--offset) * 50deg))
+        scaleY(calc(1 + var(--abs-offset)))
+        translateZ(calc(var(--abs-offset)*-70rem))
+        translateX(calc(var(--direction)*-13rem));
+    filter: blur(calc(var(--abs-offset)*.2rem));
+    transition: all 0.3s ease-out;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.562);
+    border-radius: 1rem;
+    color: black;
+    text-align: justify;
+    transition: all 0.3s ease-out;
+}
+
+.card h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 0.7em;
+    columns: black;
+}
+.card p, .card h2{
+    transition: all 0.3s ease-out;
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+}
+
+.nav.prev{
+    left: 1rem;
+    background-color: #0f0f20f5;
+}
+
+.navarrow.next{    
+    right: -1rem;
+}
+
+.previous{
+    left: -1rem;
+}
+.navarrow{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    font-size: 3.5rem;
+    padding: 0;
+    border: none;
+    display: flex;
+    border-radius: .9rem;
+    background-color: #0f0f20f5;
+    background-color: transparent;
+    color: white;
+    z-index: 5;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.808);
+}
+@media only screen and (min-width: 1550px) {
+    .carousell{
+        width: 55rem;
+    }
+    .navarrow{
+        top:60%
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .carousell{
+        width: 90vw;
+    }
+    .navarrow{
+        top:23%
+    }
+  }

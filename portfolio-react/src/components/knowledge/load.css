@@ -1,0 +1,12 @@
+circle{
+    stroke-width: 15px;
+    stroke-linecap: round;
+    fill: transparent;
+    color: #00ff73;
+}
+circle.abs{
+    stroke-width: 15px;
+    stroke-linecap: round;
+    fill: transparent;
+    color: #ffffff50;
+}

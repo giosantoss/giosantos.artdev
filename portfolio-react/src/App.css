@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index: 1;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #04041f;
+  background-color: #071a4e;
+  min-height: 100vh;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  background-image: radial-gradient(#071a4e,#04041f);
+  min-height: 100vh;
+  color: white;
+}
+
+body {
+  background-color: #04041f;
+  overflow-x: hidden;
+}
+
+aside{
+  z-index: 1;
+}
+
+section{
+  padding-top: 7rem;
+  z-index: 100;
+}
+
+section.fade-in {
+  opacity: 1;
+  animation: fadein .5s ease-in-out;
+}
+
+section.fade-out {
+  opacity: 0;
+  animation: fadeout .5s ease-in-out;
+}
+
+h1{
+  color: white;
+}
+
+
+.logo-img{
+  width: 10rem;
+  transition: .2s;
+}
+
+.galery-img:hover{
+  transform: translateY(-.5rem);
+}
+
+.row{
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .App{
+    min-height: 85vh;
+  }
+}
