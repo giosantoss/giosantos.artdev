@@ -27,7 +27,7 @@ p{
 }
 
 body {
-  background-color: #04041f;
+  background-image: radial-gradient(#071a4e,#04041f);
   overflow-x: hidden;
 }
 
