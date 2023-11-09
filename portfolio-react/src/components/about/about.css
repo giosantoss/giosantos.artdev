@@ -82,6 +82,7 @@
 
 .about-container{
     background-color: #0d0f22be;
+    background-color: #ffffff07;
     backdrop-filter: blur(2rem);
     height: max-content;
     padding: 2rem;
@@ -150,8 +151,8 @@
 }
 .page-item{
     background-color: #080a189d;
+    background-color: #080a1863;
     display: flex;
-    gap: 1rem;
     width: 100%;
     padding: 1.5rem;
     border-radius: 2rem;
@@ -213,7 +214,7 @@
     .page-img{
         width: 100%;
     }
-    .about-container,.page-description,.page-item{
+    .about-container,.page-item{
         padding: 1rem;
     }
     .greeting{
@@ -224,6 +225,13 @@
     }
     .logo{
         height: 75vw;
+    }
+    .page-description{
+        padding: 1rem 0;
+        margin-bottom: 0;
+    }
+    .about-container p{
+        margin: 0;
     }
 }
 
@@ -264,4 +272,5 @@
     .contact-stick{
         right: 1rem;
     }
+
 }
