@@ -31,13 +31,6 @@ function Knownledge() {
     initial="hidden"
     animate="visible"
     exit={'exit'}>
-      <motion.div className="top"
-      variants={galery}>
-        <img src={knowledge} className='tech'/>
-        <h1>
-          Knowledge
-        </h1>
-      </motion.div>
 
       <motion.div 
       className='cards' 
@@ -73,6 +66,10 @@ function Knownledge() {
           <p>
             In 2022 I started a course called Internet Systems, on 'Cruzeiro do Sul', and learned the concepts of HTML and CSS, and it was love at first sight, soon after I learned JavaScript, and then I got into React.js, which is my favorite language.
           </p>
+        </motion.div>
+        
+        <motion.div className="middle" variants={galery}>
+          <img src={knowledge} className='tech'/>
         </motion.div>
 
         <motion.div

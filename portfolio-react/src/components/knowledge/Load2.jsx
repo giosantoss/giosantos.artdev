@@ -34,8 +34,8 @@ const backg = {
 export default function Load2() {
   return (
     <motion.svg
-        width="80"
-        height="80"
+        width="60"
+        height="60"
         viewBox="0 0 160 160"
         initial="hidden"
         animate="visible"
