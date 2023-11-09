@@ -62,4 +62,7 @@ nav{
     #nav{
         display: none;
     }
+    .navigate:hover .description{
+        opacity: 0;
+    }
 }

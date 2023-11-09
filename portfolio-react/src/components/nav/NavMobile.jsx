@@ -3,9 +3,10 @@ import {MdMenuOpen} from 'react-icons/md'
 import './nav-mobile.css'
 import Nav from './Nav'
 import {motion, AnimatePresence } from 'framer-motion'
+import { useProjects } from '../projects/ProjectsContext'
 
 function NavMobile() {
-    const [isOpen,setIsOpen] = useState(false)
+    const {setIsOpen,isOpen} = useProjects();
 
     const menu = {
         hidden: { opacity: 0, scale: 0, x: '100%' },

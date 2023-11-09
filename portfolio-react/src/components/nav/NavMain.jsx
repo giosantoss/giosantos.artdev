@@ -80,7 +80,7 @@ function NavMain() {
           variants={itemNav}
           transition={itemNav.transition}
           className='icon-container'>
-            <Link to={leftContent.path} className='nav-main-item'>
+            <Link to={leftContent.path}>
               <motion.div
               initial="initial"
               animate="initial"
@@ -88,9 +88,9 @@ function NavMain() {
               whileTap={tap}
               transition={tap.transition}
               >
-                <motion.div animate={float}>
+                <motion.div animate={float} className='nav-main-item'>
                   <motion.img variants={iconHover} transition={iconHover.transition} src={leftContent.icon} className='nav-main-icon' />
-                  <motion.p variants={description}>{leftContent.name}</motion.p>
+                  <motion.p className='desc' variants={description}>{leftContent.name}</motion.p>
                 </motion.div>
 
               </motion.div>
@@ -121,7 +121,7 @@ function NavMain() {
               >
                 <motion.div animate={float}>
                   <motion.img variants={iconHover} transition={iconHover.transition} src={rightContent.icon} className='nav-main-icon' />
-                  <motion.p variants={description}>{rightContent.name}</motion.p>
+                  <motion.p className='desc' variants={description}>{rightContent.name}</motion.p>
                 </motion.div>
 
               </motion.div>
